@@ -1,0 +1,27 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+$sticky-footer-height: 30px;
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: $sticky-footer-height;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $sticky-footer-height;
+}
+
+// Savvior
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.33333%; }
+.size-1of4 { width: 25%; }
+
+// Cards
+.card-img {
+    border-radius: 0;
+}

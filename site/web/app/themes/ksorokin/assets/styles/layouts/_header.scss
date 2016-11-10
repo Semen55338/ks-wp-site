@@ -1,0 +1,35 @@
+header .navbar .collapse {
+	border-bottom: 1px solid $navbar-light-color;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+header .navbar-light .navbar-brand {
+  font-size: 24px;
+  color: $navbar-light-hover-color;
+}
+
+
+header .navbar {
+    padding-top: 0;
+}
+header .navbar-nav .nav-item .nav-link {
+    padding: 20px 15px;
+}
+header .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+}
+header .navbar-nav .nav-item+.nav-item {
+    margin-left: 0;
+}
+
+// Разделяшка
+header .navbar-nav .nav-item+.nav-item:before {
+    position: absolute;
+    top: 20px;
+	content: '|';
+    color: $navbar-light-hover-color;
+}
+
+body {
+    padding-top: 65px;
+}

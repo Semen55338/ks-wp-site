@@ -1,0 +1,23 @@
+// Breadcrumbs
+.breadcrumb {
+    margin-bottom: 5px;
+}
+
+// Cards
+.post-type-archive-work .card-img-overlay {
+    opacity: 0;
+    transition: opacity .2s ease-out;
+    background-color: rgba(0, 0, 0, .6);
+}
+.post-type-archive-work .card-img-overlay:hover {
+    opacity: 1;
+}
+.post-type-archive-work .card-img-overlay .card-title {
+    padding-top: 75px;
+}
+
+// Pagination
+.pagination-sm .page-item:first-child .page-link,
+.pagination-sm .page-item:last-child .page-link {
+    border-radius: 0;
+}
