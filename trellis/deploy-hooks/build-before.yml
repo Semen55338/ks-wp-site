@@ -3,29 +3,29 @@
 #
 # Uncomment the lines below and replace `ksorokin` with your theme folder
 #
- ---
- - name: Run npm install
-   command: npm install
-   connection: local
-   args:
-     chdir: "{{ project.local_path }}/web/app/themes/ksorokin"
+---
+- name: Run npm install
+  command: npm install
+  connection: local
+  args:
+    chdir: "{{ project.local_path }}/web/app/themes/ksorokin"
 
- - name: Run bower install
-   command: bower install
-   connection: local
-   args:
-     chdir: "{{ project.local_path }}/web/app/themes/ksorokin"
+- name: Run bower install
+  command: bower install
+  connection: local
+  args:
+    chdir: "{{ project.local_path }}/web/app/themes/ksorokin"
 
- - name: Run gulp
-   command: gulp --production
-   connection: local
-   args:
-     chdir: "{{ project.local_path }}/web/app/themes/ksorokin"
+- name: Run gulp
+  command: gulp --production
+  connection: local
+  args:
+    chdir: "{{ project.local_path }}/web/app/themes/ksorokin"
 
- - name: Copy project local files
-   synchronize:
-     src: "{{ project.local_path }}/web/app/themes/ksorokin/dist"
-     dest: "{{ deploy_helper.new_release_path }}/web/app/themes/ksorokin"
-     group: no
-     owner: no
-     rsync_opts: --chmod=Du=rwx,--chmod=Dg=rx,--chmod=Do=rx,--chmod=Fu=rw,--chmod=Fg=r,--chmod=Fo=r
+- name: Copy project local files
+  synchronize:
+    src: "{{ project.local_path }}/web/app/themes/ksorokin/dist"
+    dest: "{{ deploy_helper.new_release_path }}/web/app/themes/ksorokin"
+    group: no
+    owner: no
+    rsync_opts: --chmod=Du=rwx,--chmod=Dg=rx,--chmod=Do=rx,--chmod=Fu=rw,--chmod=Fg=r,--chmod=Fo=r
