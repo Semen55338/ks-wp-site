@@ -8,6 +8,7 @@ wordpress_sites:
       - canonical: konstantin-sorokin.dev
         redirects:
           - www.konstantin-sorokin.dev
+    site_title: Konstantin Sorokin
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: artem@semenov.ws
     multisite:
