@@ -8,7 +8,7 @@
         <div class="collapse navbar-toggleable-sm" id="navbarCollapse">
         <?php
          if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'pull-md-right nav navbar-nav']);
+            wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'float-md-right nav navbar-nav']);
          endif;
         ?>
         </div>

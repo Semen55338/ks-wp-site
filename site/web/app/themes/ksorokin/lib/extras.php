@@ -20,6 +20,11 @@ function body_class($classes) {
       $classes[] = get_post_type();
   }
 
+  // Front page
+  if (is_front_page()) {
+      $classes[] = 'h-100';
+  }
+
   // Add class if sidebar is active
   if (Setup\display_sidebar()) {
     $classes[] = 'sidebar-primary';
