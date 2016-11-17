@@ -88,7 +88,7 @@ function display_sidebar() {
     is_page_template('template-custom.php'),
     is_singular('work'),
     is_post_type_archive('work'),
-    is_attachment()
+    is_category()
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

@@ -9,7 +9,7 @@
     $photos = get_field('work-gallery');
     if( $photos ): ?>
        <?php foreach( $photos as $photo ): ?>
-           <div class="col-sm-12 grid-item">
+           <div class="grid-item col-sm-12">
              <?php echo wp_get_attachment_link( $photo['id'], 'thumbnail' ); ?>
            </div>
        <?php endforeach; ?>
