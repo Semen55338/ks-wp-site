@@ -29,7 +29,7 @@
       },
       finalize: function() {
         // Savvior
-        savvior.init("#grid", {
+        savvior.init(".work main .row", {
           "screen and (max-width: 576px)": { columns: 1 },
           "screen and (min-width: 577px) and (max-width: 720px)": { columns: 2 },
           "screen and (min-width: 721px)": { columns: 3 },

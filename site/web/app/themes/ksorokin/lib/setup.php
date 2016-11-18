@@ -86,7 +86,7 @@ function display_sidebar() {
     is_404(),
     is_front_page(),
     is_page_template('template-custom.php'),
-    is_singular('work'),
+    is_singular(),
     is_post_type_archive('work'),
     is_category()
   ]);

@@ -1,3 +1,5 @@
+<?php bootstrap_breadcrumb_trail(); ?>
+
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
     <?php _e('Sorry, no results were found.', 'sage'); ?>
@@ -11,4 +13,5 @@
 <?php endwhile; ?>
 </div>
 
-<?php the_posts_navigation(); ?>
+<?php bootstrap_pagination(); ?>
+
