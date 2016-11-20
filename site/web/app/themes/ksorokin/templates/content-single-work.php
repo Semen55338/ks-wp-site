@@ -1,4 +1,4 @@
-<?php bootstrap_breadcrumb_trail(); ?>
+<?php breadcrumbs(); ?>
 
 <article <?php post_class(); ?>>
   <header style="display:none;">

@@ -1,4 +1,4 @@
-<?php bootstrap_breadcrumb_trail(); ?>
+<?php breadcrumbs(); ?>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">
