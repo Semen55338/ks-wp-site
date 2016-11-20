@@ -17,7 +17,7 @@ $sage_includes = [
   'lib/wrapper.php',   // Theme wrapper class
   'lib/customizer.php', // Theme customizer
   'lib/wp-bootstrap-navwalker.php', // Bootstrap nav walker
-  'lib/breadcrumb-trail.php',      // Bootstrap Breadcrumps
+  'lib/breadcrumb-trail.php',      // Breadcrumps
   'lib/bootstrap-breadcrumbs.php', // Bootstrap Breadcrumps
   'lib/bootstrap-pagination.php'
 

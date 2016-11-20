@@ -20,5 +20,7 @@ raw_vars:
   - vault_wordpress_sites
 
 project_shared_children:
+  - path: web/app/uploads
+    src: uploads
   - path: web/app/languages
     src: languages
