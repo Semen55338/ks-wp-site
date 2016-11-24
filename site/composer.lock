@@ -428,7 +428,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/disable-comments.1.5.2.zip",
-                "reference": null,
+                "reference": "tags/1.5.2",
                 "shasum": null
             },
             "require": {

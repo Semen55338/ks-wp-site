@@ -59,3 +59,5 @@ function wp_get_attachment_link($link) {
     return str_replace('<a href=', '<a class="card" data-toggle="lightbox" data-gallery="gallery" href=', $link);
 }
 add_filter( 'wp_get_attachment_link', __NAMESPACE__ . '\\wp_get_attachment_link' );
+
+

@@ -79,8 +79,8 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 		 * comparison that is not case sensitive. The strcasecmp() function returns
 		 * a 0 if the strings are equal.
 		 */
-		//( strcasecmp($item->attr_title, 'disabled' ) == 0 ) 
-		
+		//( strcasecmp($item->attr_title, 'disabled' ) == 0 )
+
 		if($depth === 1 && (strcasecmp( $item->attr_title, 'divider' ) == 0 || strcasecmp( $item->title, 'divider') == 0)) {
 			$output .= $indent . '<div class="dropdown-divider">';
 		}else if ((strcasecmp( $item->attr_title, 'header') == 0 && $depth === 1) && $depth === 1){
@@ -88,15 +88,15 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 		}else{
 			$class_names = $value = '';
 			$classes = empty( $item->classes ) ? array() : (array) $item->classes;
-			
+
 			$atts = array();
 			$atts['title']  = ! empty( $item->title )	? $item->title	: '';
 			$atts['target'] = ! empty( $item->target )	? $item->target	: '';
 			$atts['rel']    = ! empty( $item->xfn )		? $item->xfn	: '';
 			$atts['href'] = ! empty( $item->url ) ? $item->url : '';
 			$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
-			
-			if ( in_array( 'current-menu-item', $classes ) )
+
+			if ( in_array( 'current-menu-item', $classes ) || in_array( 'current-post-parent', $classes ) )
 				$classes[] = ' active';
 			if($depth === 0){
 				$classes[] = 'nav-item';
@@ -120,7 +120,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 				$atts['class'] = $class_names;
 				$atts['id'] = $id;
 			}
-			
+
 			$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args );
 			$attributes = '';
 			foreach ( $atts as $attr => $value ) {
@@ -131,7 +131,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 			}
 			$item_output = $args->before;
 			$item_output .= '<a'. $attributes .'>';
-			
+
 			/*
 			 * Icons
 			 * ===========
@@ -214,3 +214,34 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 		}
 	}
 }
+
+
+// Mark (highlight) custom post type parent as active item in Wordpress Navigation
+function custom_post_type_active_highlight($classes, $item) {
+
+      // Getting the current post details
+    global $post;
+
+      // Get post ID, if nothing found set to NULL
+      $id = ( isset( $post->ID ) ? get_the_ID() : NULL );
+
+      // Checking if post ID exist...
+      if (isset( $id )){
+                      // Getting the post type of the current post
+          $current_post_type = get_post_type_object(get_post_type($post->ID));
+          $current_post_type_slug = $current_post_type->rewrite['slug'];
+
+          // Getting the URL of the menu item
+          $menu_slug = strtolower(trim($item->url));
+
+          // If the menu item URL contains the current post types slug add the current-menu-item class
+          if (strpos($menu_slug,$current_post_type_slug) !== false) {
+
+             $classes[] = 'active';
+
+          }
+      }
+      // Return the corrected set of classes to be added to the menu item
+      return $classes;
+}
+add_filter('nav_menu_css_class', 'custom_post_type_active_highlight', 10, 2);
