@@ -1,4 +1,10 @@
-<?php get_template_part('templates/page', 'header'); ?>
+<?php
+if (is_archive()) {
+    echo breadcrumbs();
+  } else {
+    get_template_part('templates/page', 'header');
+  }
+?>
 
 <?php if (!have_posts()) : ?>
   <div class="alert alert-warning">

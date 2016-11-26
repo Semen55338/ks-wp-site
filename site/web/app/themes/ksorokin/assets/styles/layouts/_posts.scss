@@ -1,0 +1,10 @@
+body.archive.category-blog article {
+    padding-bottom: 1rem;
+}
+
+body.archive.category-blog article.format-gallery .card-img-overlay {
+    top: auto;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+
+}

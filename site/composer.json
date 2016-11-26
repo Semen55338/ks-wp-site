@@ -56,7 +56,9 @@
     "wpackagist-plugin/regenerate-thumbnails": "^2.2",
     "wpackagist-plugin/remove-category-base": "^1.0",
     "roots/soil": "^3.7",
-    "wpackagist-plugin/disable-comments": "^1.5"
+    "wpackagist-plugin/disable-comments": "^1.5",
+    "wpackagist-plugin/facebook-by-weblizar": "2.4.5.2",
+    "wpackagist-plugin/php-code-widget": "^2.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"

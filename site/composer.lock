@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9cd4e43c1114ad59dd801fd1af1a79a0",
-    "content-hash": "8b752334b286594b2d9c4936cf016754",
+    "hash": "1b161077706d71ecfa0df57f3849ddb7",
+    "content-hash": "fa91f49a19ca7985fa133cc73e314cf3",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -436,6 +436,46 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/disable-comments/"
+        },
+        {
+            "name": "wpackagist-plugin/facebook-by-weblizar",
+            "version": "2.4.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/facebook-by-weblizar/",
+                "reference": "tags/2.4.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/facebook-by-weblizar.2.4.5.2.zip",
+                "reference": "tags/2.4.5.2",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/facebook-by-weblizar/"
+        },
+        {
+            "name": "wpackagist-plugin/php-code-widget",
+            "version": "2.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/php-code-widget/",
+                "reference": "tags/2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/php-code-widget.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/php-code-widget/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",

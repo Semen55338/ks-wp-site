@@ -20,32 +20,16 @@
       init: function() {
               },
       finalize: function() {
-              }
-    },
-    // Work post type pages
-    'work': {
-      init: function() {
-        // JavaScript to be fired on the home page
-      },
-      finalize: function() {
-        // Savvior
-        savvior.init(".work main .row", {
-          "screen and (max-width: 576px)": { columns: 1 },
-          "screen and (min-width: 577px) and (max-width: 720px)": { columns: 2 },
-          "screen and (min-width: 721px)": { columns: 3 },
-        });
         // Header brand scroll animation
         $(window).scroll(function() {
           if ($(this).scrollTop()>0)
           {
             $('.navbar-brand').fadeOut('fast');
-            $('header .navbar .collapse').css('border-bottom','none');
             $('nav.breadcrumb').css('z-index','1031');
           }
           else
           {
             $('.navbar-brand').fadeIn('fast');
-            $('header .navbar .collapse').css('border-bottom','1px solid #777');
           }
           if ($(this).scrollTop()>50)
           {
@@ -58,8 +42,23 @@
         });
               }
     },
+    // Work post type pages
+    'grid': {
+      init: function() {
+        // JavaScript to be fired on the home page
+      },
+      finalize: function() {
+        // Savvior
+        savvior.init("main .row", {
+          "screen and (max-width: 576px)": { columns: 1 },
+          "screen and (min-width: 577px) and (max-width: 720px)": { columns: 2 },
+          "screen and (min-width: 721px)": { columns: 3 },
+        });
+
+              }
+    },
     // Work Lightbox page
-    'single_work': {
+    'lightbox': {
       finalize: function() {
         // Bootstrap Lightbox
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {

@@ -20,6 +20,16 @@ function body_class($classes) {
       $classes[] = get_post_type();
   }
 
+  // Add body class to call Savvior
+  if (is_post_type_archive('work') || is_singular('work') || has_post_format('gallery')) {
+      $classes[] = 'grid';
+  }
+
+  // Add body class to call Lightbox
+  if (is_singular('work') || has_post_format('gallery')) {
+      $classes[] = 'lightbox';
+  }
+
   // Front page
   if (is_front_page()) {
       $classes[] = 'h-100';
