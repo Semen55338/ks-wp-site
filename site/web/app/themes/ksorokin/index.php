@@ -19,4 +19,4 @@ if (is_archive()) {
 <?php endwhile; ?>
 </div>
 
-<?php the_posts_navigation(); ?>
+<?php bootstrap_pagination(); ?>
