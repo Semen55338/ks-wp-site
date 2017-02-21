@@ -1,26 +1,35 @@
-header .navbar {
-    padding-bottom: 0;
+header .navbar .collapse {
+	border-bottom: 1px solid $navbar-light-color;
     background: #fff;
 }
 
-header .navbar .collapse {
-    @include media-breakpoint-up(md) {
-        padding: 0 0 .5rem;
-        border-bottom: 1px solid $navbar-light-color;
-    }
+header .navbar-light .navbar-brand {
+  font-size: 24px;
+  color: $navbar-light-hover-color;
 }
 
-// Палочка - разделяшка
-header .navbar-nav .nav-item .nav-link {
-    @include media-breakpoint-up(md) {
-        display: inline-block;
-    }
+
+header .navbar {
+    padding-top: 0;
 }
+header .navbar-nav .nav-item .nav-link {
+    padding: 20px 15px;
+}
+header .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+}
+header .navbar-nav .nav-item+.nav-item {
+    margin-left: 0;
+}
+
+// Разделяшка
 header .navbar-nav .nav-item+.nav-item:before {
-    @include media-breakpoint-up(md) {
-        display: inline;
-        padding-right: 1rem;
-        content: '|';
-        color: $navbar-light-hover-color;
-    }
+    position: absolute;
+    top: 20px;
+	content: '|';
+    color: $navbar-light-hover-color;
+}
+
+body {
+    padding-top: 65px;
 }
