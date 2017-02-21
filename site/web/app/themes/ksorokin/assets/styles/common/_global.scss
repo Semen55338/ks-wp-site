@@ -1,5 +1,9 @@
-/* Sticky footer styles
--------------------------------------------------- */
+// Fixed navbar
+.wrap.container {
+    padding-top: 50px;
+}
+
+// Sticky footer
 $sticky-footer-height: 30px;
 
 html {
