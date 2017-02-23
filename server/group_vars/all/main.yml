@@ -24,3 +24,6 @@ project_shared_children:
     src: uploads
   - path: web/app/languages
     src: languages
+
+custom_env:
+  acf_pro_key: "{{ vault_acf_pro_key }}"

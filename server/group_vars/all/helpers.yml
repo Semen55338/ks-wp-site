@@ -6,6 +6,7 @@ wordpress_env_defaults:
   wp_env: "{{ env }}"
   wp_home: "{{ item.value.ssl.enabled | default(false) | ternary('https', 'http') }}://{{ site_hosts_canonical | first }}"
   wp_siteurl: "{{ item.value.ssl.enabled | default(false) | ternary('https', 'http') }}://{{ site_hosts_canonical | first }}/wp"
+  acf_pro_key: "{{ vault_acf_pro_key }}"
 
 site_env: "{{ wordpress_env_defaults | combine(item.value.env | default({}), vault_wordpress_sites[item.key].env) }}"
 site_hosts_canonical: "{{ item.value.site_hosts | map(attribute='canonical') | list }}"
