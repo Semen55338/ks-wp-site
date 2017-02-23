@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-semenov.ws
+195.123.211.76
 
 [web]
-semenov.ws
+195.123.211.76
