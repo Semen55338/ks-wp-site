@@ -62,7 +62,7 @@
     "wpackagist-plugin/disable-comments": "^1.5",
     "wpackagist-plugin/facebook-by-weblizar": "2.4.5.2",
     "wpackagist-plugin/php-code-widget": "^2.3",
-    "yoast/wordpress-seo": "^3.8",
+    "yoast/wordpress-seo": "^5.0",
     "advanced-custom-fields/advanced-custom-fields-pro": "*"
   },
   "require-dev": {
