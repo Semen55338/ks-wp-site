@@ -4,11 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e9c33d80f112cdeccbe0a1bc50ebe5db",
+    "content-hash": "a09426d02ed3addb5c956694f6823fe4",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "9.9.9",
+            "version": "5.6.1",
             "dist": {
                 "type": "zip",
                 "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=9.9.9",
@@ -812,16 +812,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "5.3.1",
+            "version": "5.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast/wordpress-seo.git",
-                "reference": "b580d67cde3991d2c1e70b0f50e777fb51502b7e"
+                "reference": "261ce2aa83dede1a7c8d6716e6cf2e8157bf19b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/b580d67cde3991d2c1e70b0f50e777fb51502b7e",
-                "reference": "b580d67cde3991d2c1e70b0f50e777fb51502b7e",
+                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/261ce2aa83dede1a7c8d6716e6cf2e8157bf19b2",
+                "reference": "261ce2aa83dede1a7c8d6716e6cf2e8157bf19b2",
                 "shasum": ""
             },
             "require": {
@@ -863,7 +863,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2017-08-22T10:44:22+00:00"
+            "time": "2017-08-23T08:16:07+00:00"
         }
     ],
     "packages-dev": [
