@@ -52,7 +52,6 @@
     "php": ">=5.6",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "4.6.1",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/cyr3lat": "^3.5",
@@ -63,7 +62,8 @@
     "wpackagist-plugin/facebook-by-weblizar": "2.4.5.2",
     "wpackagist-plugin/php-code-widget": "^2.3",
     "yoast/wordpress-seo": "^5.0",
-    "advanced-custom-fields/advanced-custom-fields-pro": "*"
+    "advanced-custom-fields/advanced-custom-fields-pro": "*",
+    "johnpbloch/wordpress": "4.8.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
