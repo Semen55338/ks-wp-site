@@ -62,8 +62,8 @@
     "wpackagist-plugin/facebook-by-weblizar": "2.4.5.2",
     "wpackagist-plugin/php-code-widget": "^2.3",
     "yoast/wordpress-seo": "^5.0",
-    "advanced-custom-fields/advanced-custom-fields-pro": "*",
-    "johnpbloch/wordpress": "4.8.1"
+    "johnpbloch/wordpress": "4.8.1",
+    "advanced-custom-fields/advanced-custom-fields-pro": "^5.6"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
