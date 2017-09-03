@@ -18,8 +18,8 @@ $sage_includes = [
   'lib/customizer.php', // Theme customizer
   'lib/wp-bootstrap-navwalker.php', // Bootstrap nav walker
   'lib/breadcrumbs.php',      // Breadcrumps
-  'lib/bootstrap-pagination.php'
-
+  'lib/bootstrap-pagination.php',
+  'lib/bootstrap-carousel.php'
 ];
 
 foreach ($sage_includes as $file) {
