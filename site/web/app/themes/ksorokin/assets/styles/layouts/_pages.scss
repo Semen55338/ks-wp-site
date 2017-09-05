@@ -5,12 +5,12 @@
 
 // Cards
 .post-type-archive-work .card-img-overlay {
-    opacity: 0;
-    transition: opacity .2s ease-out;
+   opacity: 1;
     background-color: rgba(0, 0, 0, .6);
 }
 .post-type-archive-work .card-img-overlay:hover {
-    opacity: 1;
+    opacity: 0;
+    transition: opacity .2s ease-out;
 }
 .post-type-archive-work .card-img-overlay .card-title {
     padding-top: 75px;
