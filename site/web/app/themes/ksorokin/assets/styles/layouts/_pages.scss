@@ -4,16 +4,23 @@
 }
 
 // Cards
-.post-type-archive-work .card-img-overlay {
-   opacity: 1;
-    background-color: rgba(0, 0, 0, .6);
+.post-type-archive-work article a {
+    filter: grayscale(30%);
+    .card-img-overlay {
+        opacity: 1;
+    }
 }
-.post-type-archive-work .card-img-overlay:hover {
-    opacity: 0;
-    transition: opacity .2s ease-out;
+.post-type-archive-work article a:hover {
+    filter: none;
+    .card-img-overlay {
+        opacity: 0;
+        transition: opacity .2s ease-out;
+    }
 }
 .post-type-archive-work .card-img-overlay .card-title {
-    padding-top: 75px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
 }
 
 // Pagination
