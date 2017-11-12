@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "311e7b890ffc56ba6505670801f58e48",
+    "content-hash": "e0ca2c640bf2b3254a6c33866c27255c",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.6.1",
+            "version": "5.6.5",
             "dist": {
                 "type": "zip",
-                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.6.1",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&t=5.6.5",
                 "reference": null,
                 "shasum": null
             },
@@ -812,16 +812,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "5.4.2",
+            "version": "5.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast/wordpress-seo.git",
-                "reference": "286550d942f374e117a74fb3547e4c5f451dc65c"
+                "reference": "6d0f1617a80e26031cfe81ff59f97173c5a8eb3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/286550d942f374e117a74fb3547e4c5f451dc65c",
-                "reference": "286550d942f374e117a74fb3547e4c5f451dc65c",
+                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/6d0f1617a80e26031cfe81ff59f97173c5a8eb3a",
+                "reference": "6d0f1617a80e26031cfe81ff59f97173c5a8eb3a",
                 "shasum": ""
             },
             "require": {
@@ -863,7 +863,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2017-09-21T08:09:30+00:00"
+            "time": "2017-10-25T13:57:11+00:00"
         }
     ],
     "packages-dev": [
