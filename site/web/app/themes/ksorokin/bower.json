@@ -9,6 +9,7 @@
   "dependencies": {
     "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-alpha.5",
     "ekko-lightbox": "^5.0.0",
-    "savvior": "^0.5.2"
+    "savvior": "^0.5.2",
+    "components-font-awesome": "^4.7.0"
   }
 }
