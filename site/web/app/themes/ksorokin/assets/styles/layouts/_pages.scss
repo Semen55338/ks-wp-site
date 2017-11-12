@@ -28,3 +28,18 @@
 .pagination-sm .page-item:last-child .page-link {
     border-radius: 0;
 }
+
+// Conacts page
+.contact .page-header {
+    text-align: center;
+}
+.contact .contact-item {
+    margin-top: 40px;
+    text-align: center;
+}
+.contact .contact-item h3:before {
+    font-family: FontAwesome;
+    content: "\f041";
+    display: block;
+    font-size: 1.5em;
+}
