@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-semenov.ws:5538
+semenov.ws:443
 
 [web]
-semenov.ws:5538
+semenov.ws:443
